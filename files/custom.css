@@ -12,6 +12,7 @@ body {
         height:auto;
         }
         @media (max-width:575px) {
+        
         #hs_cos_wrapper_header_page .pwr-header-logo,
         #hs_cos_wrapper_header_page .pwr-header-logo__img { max-width:100px; }
         }
@@ -23,6 +24,8 @@ body {
             height:auto;
             }
             @media (max-width:575px) {
+            
+            
             #hs_cos_wrapper_header_page .pwr-header-logo,
             #hs_cos_wrapper_header_page .pwr-header-logo__img { max-width:100px; }
             }
@@ -32,6 +35,7 @@ body {
             #hs_cos_wrapper_header_page .hs-search-field__suggestions a:before { content:''; }
 
             @media (min-width:992px) {
+                
                 #hs_cos_wrapper_module_17371411373435 .pwr-sec-mockup__mockup {
                 --margin-center:calc(24.0% - min(950px,48%)/2);
                 --margin-side:calc(48% - min(950px,48%));
@@ -46,6 +50,16 @@ body {
                 #hs_cos_wrapper_module_17371411373435 .pwr-sec-mockup__title-intro--has-background { margin-left:0.825em; }
                 }
                 @media (max-width:991px) {
+                    .row-number-9 {
+                        display: none !important;
+                    }
+                    .row-number-45 {
+                        margin: 0 !important;
+                        padding: 0 !important;
+                    }
+                    .dnd_area-row-16-background-layers {
+                        display: none !important;
+                    }
                 #hs_cos_wrapper_module_17371411373435 .pwr-sec-mockup__content { text-align:left; }
                 #hs_cos_wrapper_module_17371411373435 .pwr-sec-mockup__title-intro {}
                 #hs_cos_wrapper_module_17371411373435 .pwr-sec-mockup__title-intro--has-background { margin-left:0.825em; }

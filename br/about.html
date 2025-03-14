@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Nós | Decor Innivate Tech</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+  <style>
+    /* Opcional: Estilos simples para o menu hambúrguer */
+    .mobile-nav { display: none; }
+    @media (max-width: 768px) {
+      .mobile-nav { display: block; }
+      .desktop-nav { display: none; }
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen bg-slate-900 text-slate-300">
+  <!-- Cabeçalho com Navegação -->
+  <header class="w-full z-30 fixed bg-slate-800/70 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="index.html" class="inline-flex">
+          <img src="files/logo.png" alt="Logo" width="184" height="32" class="max-w-none h-16" />
+        </a>
+        <!-- Navegação para Desktop -->
+        <nav class="desktop-nav">
+          <ul class="flex space-x-6 items-center">
+            <li><a href="index.html" class="hover:text-white transition duration-150">Início</a></li>
+            <li><a href="about.html" class="hover:text-white transition duration-150">Sobre Nós</a></li>
+            <li><a href="contact.html" class="hover:text-white transition duration-150">Contate-nos</a></li>
+            <li><a href="terms.html" class="hover:text-white transition duration-150">Termos</a></li>
+            <li><a href="privacy.html" class="hover:text-white transition duration-150">Privacidade</a></li>
+          </ul>
+        </nav>
+        <!-- Botão do Menu Hambúrguer para Mobile -->
+        <div class="mobile-nav block md:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg class="w-6 h-6 fill-slate-300 hover:fill-white transition duration-150" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Menu de Navegação Mobile -->
+    <nav id="mobile-menu" class="hidden bg-slate-800">
+      <ul class="flex flex-col space-y-2 px-4 py-3">
+        <li><a href="index.html" class="block hover:text-white transition duration-150">Início</a></li>
+        <li><a href="about.html" class="block hover:text-white transition duration-150">Sobre Nós</a></li>
+        <li><a href="contact.html" class="block hover:text-white transition duration-150">Contate-nos</a></li>
+        <li><a href="terms.html" class="block hover:text-white transition duration-150">Termos</a></li>
+        <li><a href="privacy.html" class="block hover:text-white transition duration-150">Privacidade</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="flex-grow pt-20">
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/70 to-slate-100/70 pb-4">
+          Sobre o Decor Innivate Tech
+        </h1>
+        <p>
+          No Decor Innivate Tech, estamos na vanguarda da inovação tecnológica e financeira, dedicados a transformar o cenário empresarial no mundo digital atual, que evolui rapidamente. Não somos apenas uma empresa; somos um catalisador do progresso, capacitando negócios para que não apenas naveguem, mas prosperem nas complexidades do mercado moderno. Nossa expertise reside em criar soluções personalizadas e de última geração que integram de forma fluida tecnologia e finanças, proporcionando uma base sólida para um crescimento sustentável e uma eficiência sem igual.
+          <br><br>
+          O Decor Innivate Tech nasceu com a visão de desmistificar a complexa relação entre tecnologia e finanças, tornando as ferramentas sofisticadas acessíveis e impactantes para empresas de todos os portes. Compreendemos os desafios que as organizações enfrentam ao tentar acompanhar os avanços tecnológicos enquanto gerenciam suas operações financeiras de forma eficaz. Por isso, nossa missão é fechar essa lacuna, oferecendo soluções integradas que são poderosas e fáceis de usar.
+          <br><br>
+          Nosso compromisso com a inovação é inabalável. Investimos continuamente em pesquisa e desenvolvimento, explorando as fronteiras da tecnologia para oferecer soluções que não apenas sejam atuais, mas também preparadas para o futuro. Desde análises impulsionadas por IA até transações seguras por meio de blockchain, aproveitamos as tecnologias mais avançadas para criar uma vantagem competitiva para nossos clientes. Acreditamos que a tecnologia deve ser um facilitador, um multiplicador de força que amplifica o potencial humano e impulsiona o sucesso empresarial.
+          <br><br>
+          Mas nosso compromisso vai além da tecnologia. Estamos dedicados a entender as necessidades financeiras únicas de cada empresa com a qual colaboramos. Nossas soluções financeiras são projetadas para serem adaptáveis e escaláveis, atendendo aos requisitos específicos de diversas indústrias e modelos de negócio. Acreditamos em fomentar parcerias de longo prazo, trabalhando de perto com nossos clientes para compreender suas metas e desafios, e fornecendo estratégias personalizadas que gerem resultados tangíveis. O Decor Innivate Tech é mais que um fornecedor de serviços; somos seu aliado estratégico na jornada rumo à transformação digital e à prosperidade financeira.
+        </p>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 border-t border-slate-700">
+      <div class="space-y-4">
+        <h2 class="text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/70 to-slate-100/70">
+          Nossa História
+        </h2>
+        <p>
+          Nossa paixão pela inovação nos impulsionou a desenvolver e aprimorar continuamente plataformas integradas que não são apenas ferramentas, mas ativos estratégicos para nossos clientes. Entendemos que a comunicação eficaz é a alma de qualquer negócio de sucesso, por isso nossas plataformas facilitam uma comunicação direta e sem interrupções, fortalecendo os relacionamentos com os clientes e permitindo uma resposta rápida às dinâmicas do mercado. Além disso, apostamos no poder da automação para liberar as empresas de tarefas rotineiras e repetitivas, permitindo que se concentrem em iniciativas estratégicas e competências centrais.
+          <br><br>
+          Cada desafio que enfrentamos foi visto como uma oportunidade inestimável para aprender e evoluir. A natureza dinâmica dos setores tecnológico e financeiro exige uma adaptação constante, e o Decor Innivate Tech sempre esteve na vanguarda dessa capacidade de resposta. Adaptamo-nos proativamente às necessidades mutáveis do mercado, garantindo que nossas soluções permaneçam relevantes, eficazes e sempre um passo à frente. Com uma visão firme e voltada para o futuro, o Decor Innivate Tech continua investindo fortemente em pesquisa e desenvolvimento, superando os limites do possível para oferecer soluções escaláveis e personalizadas que atendam às demandas do mundo empresarial moderno.
+        </p>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 border-t border-slate-700">
+      <div class="space-y-4">
+        <h2 class="text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/70 to-slate-100/70">
+          Missão e Valores
+        </h2>
+        <p>
+          No coração do Decor Innivate Tech reside uma crença fundamental: a tecnologia, em sua forma mais poderosa, deve servir à humanidade e impulsionar as empresas de forma positiva e significativa. Nossa missão não é simplesmente fornecer soluções que otimizem processos; é criar um efeito dominó de mudança positiva, gerando um impacto duradouro tanto na comunidade que servimos quanto no ambiente que compartilhamos. Somos movidos por um profundo senso de propósito, empenhados em criar tecnologia que não apenas seja eficiente, mas também ética e socialmente responsável.
+          <br><br>
+          Operamos com uma integridade inabalável, abraçando a transparência em todas as nossas interações e canalizando nossa paixão em cada projeto que realizamos. Nosso compromisso com a excelência não é apenas um slogan corporativo; está enraizado em nosso DNA. Buscamos incansavelmente os mais altos padrões, nos desafiando constantemente a superar as expectativas de nossos clientes em cada compromisso. Acreditamos em construir confiança através de desempenho consistente, comunicação clara e uma dedicação genuína ao sucesso do cliente.
+          <br><br>
+          Nossos valores fundamentais são a base do Decor Innivate Tech, orientando cada decisão e ação que tomamos:
+          <br><br>
+          * **Inovação:** Somos incansáveis na busca por soluções revolucionárias, explorando constantemente novas tecnologias e metodologias para expandir os limites do possível. Incentivamos uma cultura de criatividade e experimentação, encorajando nossa equipe a pensar de forma inovadora e desafiar abordagens convencionais.
+          <br>
+          * **Compromisso:** Estamos profundamente comprometidos com o sucesso de nossos clientes, fazendo todo o possível para compreender suas necessidades únicas e oferecer soluções que gerem resultados tangíveis. Esse compromisso se estende aos nossos colaboradores, parceiros e à comunidade, fomentando uma cultura de lealdade e apoio mútuo.
+          <br>
+          * **Excelência:** Esforçamo-nos pela excelência em tudo o que fazemos, desde o design e desenvolvimento de nossas soluções até a qualidade do nosso atendimento ao cliente. Exigimos os mais altos padrões de desempenho e buscamos constantemente maneiras de aprimorar nossos processos.
+          <br>
+          * **Responsabilidade Social:** Acreditamos em utilizar a tecnologia como uma força para o bem, buscando ativamente oportunidades para contribuir positivamente para a sociedade e minimizar nosso impacto ambiental. Estamos comprometidos com práticas comerciais éticas e trabalhamos para criar um futuro mais sustentável e inclusivo.
+          <br><br>
+          Temos imenso orgulho em colaborar com empresas que compartilham nossa visão, organizações que se movem não apenas pelo lucro, mas também pelo desejo de construir um futuro melhor para todos. A confiança e a segurança são os pilares de nossos relacionamentos com os clientes, e trabalhamos incessantemente para conquistá-las e mantê-las a cada dia. Internamente, cultivamos um ambiente de trabalho inclusivo e dinâmico, onde cada membro da equipe se sente valorizado, respeitado e capacitado a dar o seu melhor. No Decor Innivate Tech, não estamos apenas construindo tecnologia; estamos forjando parcerias duradouras e moldando um amanhã melhor, juntos.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-12">
+      <div class="grid sm:grid-cols-12 gap-8">
+        <div class="sm:col-span-12 lg:col-span-6">
+          <div class="flex flex-col sm:flex-row lg:flex-col justify-between">
+            <a href="index.html" class="inline-flex mb-2">
+              <img src="files/logo.png" alt="Logo" width="184" height="32" class="max-w-none h-16" />
+            </a>
+            <div class="text-sm text-slate-300">
+              © Decor Innivate Tech 2025<span class="text-slate-500"> - </span>Todos os direitos reservados.
+              <br /><br />
+            </div>
+            <div class="text-sm text-slate-300">
+              CNPJ: 78.989.613/0001-90<br>
+              Inscrição Estadual: 8324829-77<br>
+              Endereço: Rua Itaguaí, 974, Mangabeira, Feira de Santana, 44056-516<br>
+              Telefone: (75) 2871-8215
+            </div>
+          </div>
+        </div>
+        <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          <h6 class="text-sm text-slate-50 font-medium mb-2">Empresa</h6>
+          <ul class="text-sm space-y-2">
+            <li><a href="about.html" class="hover:text-slate-200 transition duration-150" target="_blank">Sobre Nós</a></li>
+            <li><a href="contact.html" class="hover:text-slate-200 transition duration-150" target="_blank">Contate-nos</a></li>
+            <li><a href="terms.html" class="hover:text-slate-200 transition duration-150" target="_blank">Termos</a></li>
+            <li><a href="privacy.html" class="hover:text-slate-200 transition duration-150" target="_blank">Privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript para o Toggle do Menu Mobile -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

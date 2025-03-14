@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>회사 소개 | Decor Innivate Tech</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+  <style>
+    /* Optional: Simple hamburger toggle styling */
+    .mobile-nav { display: none; }
+    @media (max-width: 768px) {
+      .mobile-nav { display: block; }
+      .desktop-nav { display: none; }
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen bg-slate-900 text-slate-300">
+  <!-- 헤더 및 네비게이션 -->
+  <header class="w-full z-30 fixed bg-slate-800/70 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="index.html" class="inline-flex">
+          <img src="files/logo.png" alt="로고" width="184" height="32" class="max-w-none h-16" />
+        </a>
+        <!-- 데스크탑 네비게이션 -->
+        <nav class="desktop-nav">
+          <ul class="flex space-x-6 items-center">
+            <li><a href="index.html" class="hover:text-white transition duration-150">홈</a></li>
+            <li><a href="about.html" class="hover:text-white transition duration-150">회사 소개</a></li>
+            <li><a href="contact.html" class="hover:text-white transition duration-150">문의하기</a></li>
+            <li><a href="terms.html" class="hover:text-white transition duration-150">약관</a></li>
+            <li><a href="privacy.html" class="hover:text-white transition duration-150">개인정보</a></li>
+          </ul>
+        </nav>
+        <!-- 모바일 햄버거 메뉴 버튼 -->
+        <div class="mobile-nav block md:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg class="w-6 h-6 fill-slate-300 hover:fill-white transition duration-150" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- 모바일 네비게이션 메뉴 -->
+    <nav id="mobile-menu" class="hidden bg-slate-800">
+      <ul class="flex flex-col space-y-2 px-4 py-3">
+        <li><a href="index.html" class="block hover:text-white transition duration-150">홈</a></li>
+        <li><a href="about.html" class="block hover:text-white transition duration-150">회사 소개</a></li>
+        <li><a href="contact.html" class="block hover:text-white transition duration-150">문의하기</a></li>
+        <li><a href="terms.html" class="block hover:text-white transition duration-150">약관</a></li>
+        <li><a href="privacy.html" class="block hover:text-white transition duration-150">개인정보</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 본문 내용 -->
+  <main class="flex-grow pt-20">
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/70 to-slate-100/70 pb-4">
+          Decor Innivate Tech 소개
+        </h1>
+        <p>
+          Decor Innivate Tech는 기술 및 금융 혁신의 최전선에 서 있으며, 오늘날 빠르게 변화하는 디지털 세계에서 비즈니스 환경을 재편하는 데 전념하고 있습니다. 우리는 단순한 회사가 아니라 발전의 촉매제로서, 현대 시장의 복잡함 속에서 단순히 헤쳐 나가는 것을 넘어 번창할 수 있도록 비즈니스를 지원합니다. 당사의 전문성은 기술과 금융을 완벽하게 통합하는 맞춤형 최첨단 솔루션을 개발하는 데 있으며, 이를 통해 지속 가능한 성장과 비할 데 없는 효율성을 위한 견고한 기반을 제공합니다.
+          <br /><br />
+          Decor Innivate Tech는 기술과 금융 간의 복잡한 관계를 해명하고, 모든 규모의 비즈니스가 정교한 도구를 쉽게 활용하고 실질적인 효과를 얻을 수 있도록 하기 위한 비전에서 탄생했습니다. 당사는 기술 발전의 속도를 따라가면서 효과적으로 재무 운영을 관리하는 데 있어 비즈니스가 직면하는 도전을 이해하고 있습니다. 이러한 이유로 우리는 이 격차를 해소하고 강력하면서도 사용하기 쉬운 통합 솔루션을 제공하는 것을 사명으로 삼고 있습니다.
+          <br /><br />
+          혁신에 대한 우리의 헌신은 결코 흔들리지 않습니다. 당사는 지속적으로 연구개발에 투자하며, 최신 기술의 경계를 탐구하여 현재뿐만 아니라 미래에도 대응할 수 있는 솔루션을 제공합니다. AI 기반 분석부터 블록체인 보안 거래에 이르기까지, 우리는 최첨단 기술을 활용하여 고객에게 경쟁 우위를 창출합니다. 기술은 인류의 잠재력을 증대시키고 비즈니스 성공을 이끄는 촉매제 역할을 해야 한다고 믿습니다.
+          <br /><br />
+          그러나 우리의 헌신은 단순히 기술에만 국한되지 않습니다. 우리는 파트너십을 맺은 각 비즈니스의 독특한 재무 요구사항을 깊이 이해하는 데 투자하고 있습니다. 당사의 재무 솔루션은 다양한 산업 및 비즈니스 모델의 구체적인 요구를 충족할 수 있도록 유연하고 확장 가능하게 설계되었습니다. 우리는 장기적인 파트너십을 구축하고, 고객의 목표와 도전을 면밀히 이해하며, 실질적인 성과를 제공하는 맞춤형 전략을 제공하는 데 믿음을 가지고 있습니다. Decor Innivate Tech는 단순한 서비스 제공자를 넘어 디지털 전환과 재정적 번영을 향한 여정에서 귀하의 전략적 동반자입니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 border-t border-slate-700">
+      <div class="space-y-4">
+        <h2 class="text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/70 to-slate-100/70">
+          회사 역사
+        </h2>
+        <p>
+          혁신에 대한 우리의 열정은 단순한 도구를 넘어서 고객에게 전략적 자산이 되는 통합 플랫폼을 지속적으로 개발하고 개선하도록 이끌어 왔습니다. 효과적인 소통은 성공적인 비즈니스의 생명선임을 이해하고 있기에, 당사의 플랫폼은 원활한 직접 소통을 가능하게 하여 고객과의 관계를 강화하고 시장 변화에 신속하게 대응할 수 있도록 합니다. 더불어, 우리는 자동화의 힘을 통해 비즈니스가 일상적이고 반복적인 작업에서 벗어나 전략적 이니셔티브와 핵심 역량에 집중할 수 있도록 지원합니다.
+          <br /><br />
+          우리가 직면한 모든 도전은 배우고 발전할 수 있는 소중한 기회로 여겨졌습니다. 기술 및 금융 분야의 역동적인 특성은 끊임없는 적응을 요구하며, Decor Innivate Tech는 항상 이러한 변화에 선제적으로 대응해 왔습니다. 우리는 시장의 끊임없이 변화하는 요구에 능동적으로 적응하여 당사의 솔루션이 항상 적절하고 효과적이며 선도적일 수 있도록 보장합니다. 확고한 미래 지향적 비전을 바탕으로, Decor Innivate Tech는 연구개발에 지속적으로 막대한 투자를 하며, 가능한 것의 한계를 뛰어넘어 현대 비즈니스 세계의 끊임없이 변화하는 요구를 충족하는 확장 가능하고 맞춤형 솔루션을 제공합니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 border-t border-slate-700">
+      <div class="space-y-4">
+        <h2 class="text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/70 to-slate-100/70">
+          미션 및 가치
+        </h2>
+        <p>
+          Decor Innivate Tech의 핵심에는 근본적인 신념이 자리잡고 있습니다: 가장 강력한 형태의 기술은 인류를 위해 봉사하며 비즈니스를 긍정적이고 의미 있는 방식으로 발전시켜야 한다는 것입니다. 우리의 사명은 단순히 프로세스를 최적화하는 솔루션을 제공하는 것에 그치지 않고, 긍정적인 변화의 파장을 일으켜 우리가 속한 커뮤니티와 공유하는 환경에 지속적인 영향을 미치는 것입니다. 우리는 깊은 목적 의식에 의해 움직이며, 효율적일 뿐만 아니라 윤리적으로 건전하고 사회적으로 책임감 있는 기술을 창조하기 위해 노력합니다.
+          <br /><br />
+          우리는 한결같은 정직성을 바탕으로 모든 거래에서 투명성을 수용하며, 우리의 열정을 모든 프로젝트에 쏟아붓습니다. 탁월함에 대한 우리의 헌신은 단순한 기업 슬로건이 아니라 우리의 DNA에 새겨져 있습니다. 우리는 최고 수준의 기준을 끊임없이 추구하며, 모든 업무에서 고객의 기대를 뛰어넘기 위해 스스로를 밀어붙입니다. 일관된 성과, 명확한 소통, 그리고 고객 성공에 대한 진정한 헌신을 통해 신뢰를 구축한다고 믿습니다.
+          <br /><br />
+          당사의 핵심 가치는 Decor Innivate Tech의 기반이며, 우리가 내리는 모든 결정과 행동을 이끕니다:
+          <br /><br />
+          **혁신:** 우리는 획기적인 솔루션을 끊임없이 추구하며, 가능한 것의 한계를 뛰어넘기 위해 새로운 기술과 방법론을 지속적으로 탐구합니다. 창의성과 실험의 문화를 조성하여, 팀원들이 틀에 얽매이지 않고 기존 방식을 도전하도록 격려합니다.
+          <br /><br />
+          **헌신:** 우리는 고객의 성공에 깊이 헌신하며, 그들의 고유한 요구를 이해하고 실질적인 결과를 이끌어내는 솔루션을 제공하기 위해 최선을 다합니다. 이 헌신은 직원, 파트너, 그리고 커뮤니티까지 확장되어 충성심과 상호 지원의 문화를 조성합니다.
+          <br /><br />
+          **탁월함:** 우리는 솔루션의 설계 및 개발부터 고객 서비스의 품질에 이르기까지 모든 일에 탁월함을 추구합니다. 우리는 스스로를 최고 수준의 성과 기준에 맞추며, 프로세스를 개선하고 정교화할 방법을 끊임없이 모색합니다.
+          <br /><br />
+          **사회적 책임:** 우리는 기술을 선의의 힘으로 사용하여 사회에 긍정적으로 기여하고 환경 영향을 최소화할 수 있는 기회를 적극적으로 모색합니다. 우리는 윤리적인 비즈니스 관행에 전념하며, 보다 지속 가능하고 포용적인 미래를 창조하기 위해 노력합니다.
+          <br /><br />
+          우리는 이 같은 비전을 공유하는 회사들과 협업하게 되어 매우 자랑스럽습니다. 이들 조직은 단순히 이윤 추구에만 치우치지 않고 모두를 위한 더 나은 미래를 건설하려는 열망을 가지고 있습니다. 신뢰와 안전은 고객 관계의 초석이며, 우리는 매일 그 신뢰를 얻고 유지하기 위해 끊임없이 노력합니다. 내부적으로는 모든 팀원이 소중하게 평가받고 존중받으며 최선을 다해 기여할 수 있는 포용적이고 역동적인 근무 환경을 조성합니다. Decor Innivate Tech는 단순히 기술을 구축하는 것을 넘어, 지속적인 파트너십을 구축하고 함께 더 나은 내일을 만들어 나가고 있습니다.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="bg-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-12">
+      <div class="grid sm:grid-cols-12 gap-8">
+        <div class="sm:col-span-12 lg:col-span-6">
+          <div class="flex flex-col sm:flex-row lg:flex-col justify-between">
+            <a href="index.html" class="inline-flex mb-2">
+              <img src="files/logo.png" alt="로고" width="184" height="32" class="max-w-none h-16" />
+            </a>
+            <div class="text-sm text-slate-300">
+              © Decor Innivate Tech 2025<span class="text-slate-500"> - </span>모든 권리 보유.
+              <br /><br />
+            </div>
+            <div class="text-sm text-slate-300">
+              주소: 서울특별시 중구 서소문동 21-1<br />
+              전화: +34 986 227 374<br />
+              법인 등록 번호: 4010501096087
+            </div>
+          </div>
+        </div>
+        <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          <h6 class="text-sm text-slate-50 font-medium mb-2">회사</h6>
+          <ul class="text-sm space-y-2">
+            <li><a href="about.html" class="hover:text-slate-200 transition duration-150" target="_blank">회사 소개</a></li>
+            <li><a href="contact.html" class="hover:text-slate-200 transition duration-150" target="_blank">문의하기</a></li>
+            <li><a href="terms.html" class="hover:text-slate-200 transition duration-150" target="_blank">약관</a></li>
+            <li><a href="privacy.html" class="hover:text-slate-200 transition duration-150" target="_blank">개인정보</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 모바일 메뉴 토글을 위한 JavaScript -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
